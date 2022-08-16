@@ -9,7 +9,7 @@ export class MoveEntity implements ISystem {
     const transform = this.entity.getComponent(Transform);
     const playerPosition = Camera.instance.position;
 
-    transform.rotation = Camera.instance.rotation;
-    transform.position = playerPosition.add(new Vector3(1.2, 1.2, 1.2));
+    transform.rotation = new Quaternion(0, 90, 0, 0);
+    transform.position = playerPosition.add(new Vector3(0.6, 0.2, 0.2));
   }
 }
