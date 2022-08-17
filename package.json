@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "My new Decentraland project",
   "scripts": {
-    "start": "dcl start",
+    "start": "CI=true dcl start -p ${PORT:=8000}",
     "build": "build-ecs",
     "watch": "build-ecs --watch",
     "deploy:now": "dcl pack",
@@ -22,7 +22,8 @@
     "yarn": "please use npm"
   },
   "dependencies": {
-    "@dcl/ui-scene-utils": "^1.8.4"
+    "@dcl/ui-scene-utils": "^1.8.4",
+    "decentraland": "^3.11.2"
   },
   "bundleDependencies": [
     "@dcl/ui-scene-utils"
