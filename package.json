@@ -18,8 +18,7 @@
   },
   "engines": {
     "node": ">=14.0.0",
-    "npm": ">=6.0.0",
-    "yarn": "please use npm"
+    "npm": ">=6.0.0"
   },
   "dependencies": {
     "@dcl/ui-scene-utils": "^1.8.4",
